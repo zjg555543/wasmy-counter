@@ -3,6 +3,7 @@ use serde::{Deserialize, Serialize};
 use cosmwasm_std::{Uint256};
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct InstantiateMsg {
+    pub init_count: Uint256,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]

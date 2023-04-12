@@ -14,7 +14,7 @@ pub fn instantiate(
     _info: MessageInfo,
     _msg: InstantiateMsg,
 ) -> Result<Response, ContractError> {
-    let counter:Uint256 = Uint256::zero();
+    let counter:Uint256 = _msg.init_count;
     COUNTER_VALUE.save(deps.storage, &counter)?;  
     Ok(Response::new())
 }
@@ -76,7 +76,7 @@ mod tests {
     fn proper_initialization() {
         let mut deps = mock_dependencies_with_balance(&coins(2, "token"));
 
-        let msg = InstantiateMsg { };
+        let msg = InstantiateMsg {init_count: Uint256::from_u128(0) };
         let info = mock_info("creator", &coins(1000, "earth"));
 
         // we can just call .unwrap() to assert this was a success
@@ -93,7 +93,7 @@ mod tests {
     fn add() {
         let mut deps = mock_dependencies_with_balance(&coins(2, "token"));
 
-        let msg = InstantiateMsg {};
+        let msg = InstantiateMsg {init_count: Uint256::from_u128(0)};
         let info = mock_info("creator", &coins(2, "token"));
         let _res = instantiate(deps.as_mut(), mock_env(), info, msg).unwrap();
 
@@ -112,7 +112,7 @@ mod tests {
     fn reset() {
         let mut deps = mock_dependencies_with_balance(&coins(2, "token"));
 
-        let msg = InstantiateMsg { };
+        let msg = InstantiateMsg { init_count: Uint256::from_u128(0)};
         let info = mock_info("creator", &coins(2, "token"));
         let _res = instantiate(deps.as_mut(), mock_env(), info, msg).unwrap();
 
