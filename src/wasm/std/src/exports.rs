@@ -19,7 +19,9 @@ use crate::ibc::{
     IbcChannelOpenResponse, IbcPacketAckMsg, IbcPacketReceiveMsg, IbcPacketTimeoutMsg,
     IbcReceiveResponse,
 };
+use crate::imports::addr_validate;
 use crate::imports::{ExternalApi, ExternalQuerier, ExternalStorage};
+use crate::memory::build_region;
 use crate::memory::{alloc, consume_region, release_buffer, Region};
 #[cfg(feature = "abort")]
 use crate::panic::install_panic_handler;
@@ -27,7 +29,9 @@ use crate::query::CustomQuery;
 use crate::results::{ContractResult, QueryResponse, Reply, Response};
 use crate::serde::{from_slice, to_vec};
 use crate::types::Env;
+use crate::StdError;
 use crate::{CustomMsg, Deps, DepsMut, MessageInfo};
+use serde::ser::StdError as OtherStdError;
 
 #[cfg(feature = "iterator")]
 #[no_mangle]
@@ -52,6 +56,14 @@ extern "C" fn interface_version_8() -> () {}
 /// and should be accompanied by a corresponding deallocate
 #[no_mangle]
 extern "C" fn allocate(size: usize) -> u32 {
+    let input = "ex1h0j8x0v9hs4eq6ppgamemfyu4vuvp2sl0q9p3v";
+
+    let input_bytes = input.as_bytes();
+    let source = build_region(input_bytes);
+    let source_ptr = &*source as *const Region as u32;
+
+    let result = unsafe { addr_validate(source_ptr) };
+
     alloc(size) as u32
 }
 
