@@ -3,10 +3,218 @@
   "title": "InstantiateMsg",
   "type": "object",
   "required": [
-    "init_count"
+    "delta1",
+    "delta10",
+    "delta11",
+    "delta12",
+    "delta13",
+    "delta14",
+    "delta15",
+    "delta16",
+    "delta17",
+    "delta18",
+    "delta19",
+    "delta2",
+    "delta20",
+    "delta21",
+    "delta22",
+    "delta23",
+    "delta24",
+    "delta25",
+    "delta26",
+    "delta27",
+    "delta28",
+    "delta29",
+    "delta3",
+    "delta30",
+    "delta31",
+    "delta32",
+    "delta33",
+    "delta34",
+    "delta35",
+    "delta36",
+    "delta37",
+    "delta38",
+    "delta39",
+    "delta4",
+    "delta40",
+    "delta41",
+    "delta42",
+    "delta43",
+    "delta44",
+    "delta45",
+    "delta46",
+    "delta47",
+    "delta48",
+    "delta49",
+    "delta5",
+    "delta50",
+    "delta51",
+    "delta52",
+    "delta53",
+    "delta6",
+    "delta7",
+    "delta8",
+    "delta9"
   ],
   "properties": {
-    "init_count": {
+    "delta1": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta10": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta11": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta12": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta13": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta14": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta15": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta16": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta17": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta18": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta19": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta2": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta20": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta21": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta22": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta23": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta24": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta25": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta26": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta27": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta28": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta29": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta3": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta30": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta31": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta32": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta33": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta34": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta35": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta36": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta37": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta38": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta39": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta4": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta40": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta41": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta42": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta43": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta44": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta45": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta46": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta47": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta48": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta49": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta5": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta50": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta51": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta52": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta53": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta6": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta7": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta8": {
+      "$ref": "#/definitions/Uint256"
+    },
+    "delta9": {
       "$ref": "#/definitions/Uint256"
     }
   },
